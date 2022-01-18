@@ -76,7 +76,7 @@ trait Asserter
     protected function assertEquals($expected, $actual, string $message = null): void
     {
         $this->assert(
-            $expected === $actual,
+            $expected == $actual,
             $message ?: "The element '$actual' is not equal to '$expected'"
         );
     }
